@@ -20,7 +20,7 @@ const styles = {
 
 class Chart extends Component{
     render() {
-        const {chart, showingChart, showChart} = this.props
+        const {chart, showingChart, showChart, deleteChart} = this.props
         const value = chart.reduce((acc, elem) => acc + elem.quantity, 0)
         return (
             <div>
@@ -30,7 +30,7 @@ class Chart extends Component{
                 <button style={styles.chart} onClick={showChart}>
                     Chart
                 </button>
-                {showingChart ? <ChartDetail chart={chart}/> : null}
+                {showingChart ? <ChartDetail chart={chart} deleteChart={deleteChart}/> : null}
             </div>
         )
     }

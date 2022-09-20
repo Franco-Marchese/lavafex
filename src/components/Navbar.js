@@ -19,14 +19,15 @@ const styles ={
 
 class Navbar extends Component{
     render() {
-        const {chart, showingChart, showChart} = this.props
+        const {chart, showingChart, showChart, deleteChart} = this.props
         return (
             <nav style={styles.navbar}>
                 <Logo />
                 <Chart 
                     chart={chart} 
                     showingChart={showingChart} 
-                    showChart={showChart}/>
+                    showChart={showChart}
+                    deleteChart={deleteChart}/>
             </nav>
         )
     }

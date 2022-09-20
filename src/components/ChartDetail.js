@@ -21,12 +21,19 @@ const styles = {
         alignItems: 'center',
         padding: '18px 18px',
         borderBottom: 'solid 1px #fff'
+    },
+    deleteButton: {
+        borderRadius: '50px',
+        color: '#fff',
+        backgroundColor: '#CF9BC3',
+        border: 'solid .1em #fff',
+        boxShadow: '0 .2em .2em rgb(0, 0, 0, 0.1)'
     }
 }
 
 class ChartDetail extends Component{
     render() {
-        const {chart} = this.props
+        const {chart, deleteChart} = this.props
         return (
             <div style={styles.chartDetail}>
                 <ul style={styles.ul}>
@@ -34,6 +41,7 @@ class ChartDetail extends Component{
                         <img alt={elem.name} src={elem.img} width='40' height='30'/>
                         <span>{elem.name}</span>
                         <span>{elem.quantity}</span>
+                        <button style={styles.deleteButton} onClick={deleteChart}>X</button>
                     </li>)}
                 </ul>
             </div>
