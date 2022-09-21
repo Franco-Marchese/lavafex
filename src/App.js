@@ -3,7 +3,7 @@ import Deck from './components/Deck';
 import Layout from './components/Layout';
 import Title from './components/Title';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import HeroButton from './components/HeroButton';
 import Footer from './components/Footer';
 
 const styles = {
@@ -32,6 +32,7 @@ class App extends Component {
     ],
     chart: [],
     showingChart: false,
+    showingValues: false,
   }
 /*----------------------------------------------------------------------------*/
 
@@ -56,7 +57,28 @@ addToChart = (product) => {
   })
 }
 
-deleteFromChart = () => {console.log('get out!')}
+deleteFromChart = (product) => {
+  const {chart} =this.state
+  if (chart.find(elem => elem.name === product.name && elem.quantity > 0)) {
+    const newChart = chart.map(elem => elem.name === product.name ? 
+      ({
+        ...elem,
+        quantity: elem.quantity - 1
+      })
+      : elem)
+      if (newChart.find(elem => elem.quantity === 0)) {
+        let toDelete = 0
+        const chartChecked = newChart.map(elem => elem.quantity === 0 ? 
+          (
+            toDelete = newChart.indexOf(elem)
+          )
+          : elem)
+        chartChecked.splice(toDelete, 1)
+        return this.setState({chart: chartChecked})
+      }
+      return this.setState({chart: newChart})
+  }
+}
 
 showChart = () => {
   if (!this.state.chart.length){
@@ -64,9 +86,16 @@ showChart = () => {
   }
   this.setState({showingChart: !this.state.showingChart})
 }
+
+showValues = () => {
+  this.setState({showingValues: !this.state.showingChart})
+  if (this.state.showingValues === false){
+    return
+  }
+}
 /*----------------------------------------------------------------------------*/
   render() {
-    const {showingChart} = this.state
+    const {showingChart, showingValues} = this.state
     return (
       <div styles={styles.main}>
         <Navbar 
@@ -75,7 +104,11 @@ showChart = () => {
           showChart={this.showChart}
           deleteChart={this.deleteFromChart}
         />
-        <Hero hero={this.state.hero}/>
+        <HeroButton 
+        showingValues={showingValues} 
+        showValues={this.showValues} 
+        hero={this.state.hero}
+        />
         <Layout>
           <Title />
           <Deck 

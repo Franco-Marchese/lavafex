@@ -41,7 +41,7 @@ class ChartDetail extends Component{
                         <img alt={elem.name} src={elem.img} width='40' height='30'/>
                         <span>{elem.name}</span>
                         <span>{elem.quantity}</span>
-                        <button style={styles.deleteButton} onClick={deleteChart}>X</button>
+                        <button style={styles.deleteButton} onClick={() => deleteChart(elem)}>X</button>
                     </li>)}
                 </ul>
             </div>
