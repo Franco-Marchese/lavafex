@@ -3,13 +3,13 @@ import { Component } from "react";
 const styles = {
     container: {
         backgroundColor: '#7FD1AE',
-        margin: 0,
+        marginTop: 0,
         padding: '5px',
         display: 'flex',
         flexDirection: 'column',
+        borderRadius: '30px 30px 30px 30px',
     },
     text: {
-        margin: 3,
         padding: '0px 6em 4px 6em',
         textAlign: 'center',
         fontWeight: 400,

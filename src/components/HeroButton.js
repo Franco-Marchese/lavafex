@@ -3,7 +3,6 @@ import Hero from './Hero';
 
 const styles = {
     container: {
-        width: '800px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -15,7 +14,7 @@ const styles = {
         fontWeight: '850',
         backgroundColor: '#CF9BC3',
         padding: '.4em 1.4em',
-        marginTop: 0,
+        margin: 0,
         borderRadius: '0em 0em 1.4em 1.4em',
     }
 }

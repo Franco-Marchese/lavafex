@@ -7,14 +7,16 @@ const styles = {
         backgroundColor: '#CF9BC3',
         color: '#fff',
         border: 'none',
-        borderRadius: '15px',
+        borderRadius: '2em',
         padding: '10px',
         cursor: 'pointer',
+        marginBottom: '1em',
+
     },
     bubble: {
         position: 'relative',
-        left: 12,
-        top: 20,
+        left: -12,
+        top: 15,
     }
 }
 
@@ -29,6 +31,7 @@ class Chart extends Component{
                 </span>
                 <button style={styles.chart} onClick={showChart}>
                     Chart
+                    <img alt='chart' src={'./products/chart.svg'}/>
                 </button>
                 {showingChart ? <ChartDetail chart={chart} deleteChart={deleteChart}/> : null}
             </div>
