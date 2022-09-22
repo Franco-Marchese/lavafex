@@ -3,10 +3,20 @@ import Hero from './Hero';
 
 const styles = {
     container: {
-        backgroundColor: '#CF9BC3',
+        width: '800px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+
     },
     line: {
-
+        color: '#fff',
+        textAlign: 'center',
+        fontWeight: '850',
+        backgroundColor: '#CF9BC3',
+        padding: '.4em 1.4em',
+        marginTop: 0,
+        borderRadius: '0em 0em 1.4em 1.4em',
     }
 }
 
@@ -14,9 +24,9 @@ class HeroButton extends Component{
     render() {
         const {showingValues, showValues, hero} = this.props
         return (
-            <div style={styles.container} onClick={showValues}>
-                <p style={styles.line}>What moves us?</p>
-                <div>{showingValues ? <Hero hero={hero}/> : null}</div>
+            <div style={styles.container} >
+                <p style={styles.line} onClick={showValues}>What moves us?</p>
+                {showingValues ? <Hero hero={hero}/> : null}
             </div>
         )
     }

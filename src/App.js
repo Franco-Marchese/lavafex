@@ -22,7 +22,7 @@ class App extends Component {
       {m: 'Our mission is, through our car wash service, to make you feel safe with the things you carry and/or use in your day-to-day life. With the use of our technology and experience to satisfy our customers.', 
       v: 'Our vision is to be the most outstanding cleaning center for its quality and trustworthy service, grouping together different daily hygiene and cleaning services.',
       mTitle: 'Our mision.',
-      vTitle: 'Out Vision.'}
+      vTitle: 'Our Vision.'}
     ],
     productos: [
       {name: 'Carpet wash', price: '25', img: '/products/alfombra.jpg'},
@@ -88,10 +88,7 @@ showChart = () => {
 }
 
 showValues = () => {
-  this.setState({showingValues: !this.state.showingChart})
-  if (this.state.showingValues === false){
-    return
-  }
+  this.setState({showingValues: !this.state.showingValues})
 }
 /*----------------------------------------------------------------------------*/
   render() {
