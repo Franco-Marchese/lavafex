@@ -3,21 +3,26 @@ import BubbleAlert from './BubbleAlert';
 import ChartDetail from './ChartDetail';
 
 const styles = {
+    chartContainer: {
+        display: 'flex',
+        alignItems: 'center',
+    },
     chart: {
         backgroundColor: '#CF9BC3',
-        color: '#fff',
+        width: '2em',
+        height: '2em',
         border: 'none',
         borderRadius: '2em',
-        padding: '10px',
+        padding: '.2em',
         cursor: 'pointer',
-        marginBottom: '1em',
+        position: '',
 
     },
     bubble: {
         position: 'relative',
-        left: -12,
-        top: 15,
-    }
+        left: 30,
+        top: 12,
+    },
 }
 
 class Chart extends Component{
@@ -29,10 +34,13 @@ class Chart extends Component{
                 <span style={styles.bubble}>
                     {value !== 0 ? <BubbleAlert value={value}/> : null}
                 </span>
-                <button style={styles.chart} onClick={showChart}>
-                    Chart
-                    <img alt='chart' src={'./products/chart.svg'}/>
-                </button>
+                <div style={styles.chartContainer}>
+                    <img 
+                        alt='chart' 
+                        src={'./products/chart.svg'} 
+                        style={styles.chart} 
+                        onClick={showChart}/>
+                </div>
                 {showingChart ? <ChartDetail chart={chart} deleteChart={deleteChart}/> : null}
             </div>
         )

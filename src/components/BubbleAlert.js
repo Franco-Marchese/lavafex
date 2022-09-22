@@ -3,7 +3,7 @@ import { Component } from "react";
 const styles = {
     bubbleAlert: {
         backgroundColor: '#E9725A',
-        borderRadius: '20px',
+        borderRadius: '2em',
         color: '#fff',
         padding: '2px 10px',
         fontSize: '0.7em',
