@@ -25,7 +25,7 @@ The navigation bar only has 3 simple elements: a logo in letters,
 a button on the values ​​of the company, a cart icon with the services
 that you want to hire.
 
-![navbar](public/ReadMe photos/navbar.png)
+![navbar](/public/ReadMe photos/navbar.png)
 
   - ## Values tab.
 
@@ -37,7 +37,7 @@ that you want to hire.
   Once you use the values ​​tab found on the bottom
   bottom, a window like the following is displayed.
 
-  ![values-window](public/ReadMe photos/opened_values.png)
+  ![values-window](/public/ReadMe photos/opened_values.png)
 
   - ## Chart.
 
@@ -45,7 +45,7 @@ that you want to hire.
   detailed from 1 to 9, above this the account only shows a
   "9+". For the example, 7 selected elements are shown.
 
-  ![closed-chart](public/ReadMe photos/navbar_chart_items.png)
+  ![closed-chart](/public/ReadMe photos/navbar_chart_items.png)
 
     - ### Delete function.
 
@@ -58,8 +58,8 @@ that you want to hire.
     of the cart before and after using the button a couple of times before
     mentioned.
 
-    ![items-before](public/ReadMe photos/chart_items.png)
-    ![items-after](public/ReadMe photos/chart_items_2.png)
+    ![items-before](/public/ReadMe photos/chart_items.png)
+    ![items-after](/public/ReadMe photos/chart_items_2.png)
 
 # Services.
 
@@ -74,14 +74,14 @@ Each service is available to the client in the form of a card, these contain:
     elements are added in unit quantities to the
     cart previously shown in this document.
 
-    ![services-deck](public/ReadMe photos/service_cards.png)
+    ![services-deck](/public/ReadMe photos/service_cards.png)
 
 # Footer.
 
 At the end of the page a generic footer is shown with the name of the person
 wrote this document, plus a mention to `create-react-app`.
 
-![footer](public/ReadMe photos/footer.png)
+![footer](/public/ReadMe photos/footer.png)
   
 I consider that although I can continue developing extra features for the page, it is a simple development exercise to measure my abilities for this type of work.
 
