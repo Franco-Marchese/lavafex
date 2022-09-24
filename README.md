@@ -47,19 +47,19 @@ that you want to hire.
 
   <image src="/public/ReadMe photos/navbar_chart_items.png" alt="closed-chart">
 
-    - ### Delete function.
+  - ### Delete function.
 
-    Each item in this list has a purple button on the far right
-    with an "X". This calls a function that eliminates per unit
-    each time it is interacted with, once the number of items
-    reaches 0 the service is removed from the cart.
+  Each item in this list has a purple button on the far right
+  with an "X". This calls a function that eliminates per unit
+  each time it is interacted with, once the number of items
+  reaches 0 the service is removed from the cart.
 
-    The following images show how the content looks
-    of the cart before and after using the button a couple of times before
-    mentioned.
+  The following images show how the content looks
+  of the cart before and after using the button a couple of times before
+  mentioned.
 
-    <image src="/public/ReadMe photos/chart_items.png" alt="items-before">
-    <image src="/public/ReadMe photos/chart_items_2.png" alt="items-after">
+  <image src="/public/ReadMe photos/chart_items.png" alt="items-before">
+  <image src="/public/ReadMe photos/chart_items_2.png" alt="items-after">
 
 # Services.
 
