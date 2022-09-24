@@ -26,6 +26,7 @@ a button on the values ​​of the company, a cart icon with the services
 that you want to hire.
 
 ![navbar](/public/ReadMe photos/navbar.png)
+<image src="/public/ReadMe photos/navbar.png" alt="navbar">
 
   - ## Values tab.
 
